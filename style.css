@@ -4,12 +4,12 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: teal;
 }
 .container{
     display: grid;
     width: 100vw;
-    height: 100vh;
-    background-color: teal;
+    height: 100vh;    
     font-family: 'Barlow', sans-serif;
 }
 
@@ -25,7 +25,7 @@ body{
     align-self: center;
     min-width: 350px;
     width: 33%;
-    height: 50%;
+    height: 60%;
     text-align: center;
     border: 1px solid yellowgreen;
     border-radius: 25px;
@@ -33,9 +33,10 @@ body{
     
 }
 #reload{
+    margin-top: 20px;
     position: absolute;
     color: yellowgreen;
-    font-size:20px;
+    font-size:clamp(15px,20px,20px);
     bottom: 1%;
     right: 1%;
     font-weight:bold;
@@ -54,7 +55,7 @@ body{
 .title{
     font-weight: 800;
     font-style: italic;
-    font-size: 50px;
+    font-size: clamp(45px, 50px, 50px);
     color: White;
     grid-area: t;
     align-self: center;
@@ -64,7 +65,7 @@ body{
     margin-bottom: 5px;
 }
 input {
-    font-size: 20px;
+    font-size: clamp(15px,20px,20px);
     font-weight: 400;
     text-align: center;
     width: 40px;
@@ -74,7 +75,7 @@ input {
 }
 
 .botao{
-    font-size: 20px;
+    font-size: clamp(15px,20px,20px);
     padding-bottom: 3px;
     color: white;
     width: 50%;
@@ -97,7 +98,7 @@ input {
     visibility: hidden;
 }
 .resultado{
-    font-size: 30px;
+    font-size: clamp(25px,30px,30px);
     align-self: flex-end;
     color: white;
     margin-bottom: 10px;
