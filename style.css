@@ -21,7 +21,7 @@ body{
                         "rn"    ;
     background-color: #14581a;
     margin-top: 100px;
-    min-width: 315px;
+    min-width: 425px;
     max-width: 500px;
     min-height: 450px;
     max-height: 500px;
@@ -108,5 +108,10 @@ input {
     input{
         width: 30px;
         height: 30px;
+    }   
+    .items{
+        max-width: 425px;
+        width: 100%;
+        min-width: 310px;
     }
 }
