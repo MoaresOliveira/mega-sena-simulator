@@ -104,3 +104,9 @@ input {
     color: white;
     margin-bottom: 10px;
 }
+@media only screen and (max-width: 425px){
+    input{
+        width: 30px;
+        height: 30px;
+    }
+}
