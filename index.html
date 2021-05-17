@@ -11,33 +11,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,800;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="items">
-                <h1 class="title">MEGA-SENA</h1>
-                <div class="numeros">
-                    <h2 class="subtitle">Números de 0 a 60</h2>
-                    <input type="number" class="n" id="n1" placeholder="0">
-                    <input type="number" class="n" id="n2" placeholder="0">
-                    <input type="number" class="n" id="n3" placeholder="0">
-                    <input type="number" class="n" id="n4" placeholder="0">
-                    <input type="number" class="n" id="n5" placeholder="0">
-                    <input type="number" class="n" id="n6" placeholder="0">
-                </div>
-                <button class="botao" id="btn" onclick="apostar()">APOSTAR 🍀</button>
-                <div id="nresultado">
-                    <h1 class="resultado" id="raposta"></h1>        
-                    <input type="number" class="r" id="r1"  readonly >
-                    <input type="number" class="r" id="r2"  readonly >
-                    <input type="number" class="r" id="r3"  readonly>
-                    <input type="number" class="r" id="r4"  readonly>
-                    <input type="number" class="r" id="r5"  readonly>
-                    <input type="number" class="r" id="r6"  readonly>
-                </div>
-                <button id="reload" onclick="reload()">⟲</button>
+    <header></header> 
+
+    
+        <div class="items">
+            <h1 class="title">MEGA-SENA</h1>
+            <div class="numeros">
+                <h2 class="subtitle">Números de 0 a 60</h2>
+                <input type="number" class="n" id="n1" placeholder="0">
+                <input type="number" class="n" id="n2" placeholder="0">
+                <input type="number" class="n" id="n3" placeholder="0">
+                <input type="number" class="n" id="n4" placeholder="0">
+                <input type="number" class="n" id="n5" placeholder="0">
+                <input type="number" class="n" id="n6" placeholder="0">
             </div>
+            <button class="botao" id="btn" onclick="apostar()">APOSTAR</button>
+            <div id="nresultado">
+                <h1 class="resultado" id="raposta"></h1>        
+                <input type="number" class="r" id="r1"  readonly >
+                <input type="number" class="r" id="r2"  readonly >
+                <input type="number" class="r" id="r3"  readonly>
+                <input type="number" class="r" id="r4"  readonly>
+                <input type="number" class="r" id="r5"  readonly>
+                <input type="number" class="r" id="r6"  readonly>
+            </div>
+            <button id="reload" onclick="reload()">⟲</button>
         </div>
-    </header> 
+    
+    
     <script src="script.js"></script>   
 </body>
 </html>

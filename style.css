@@ -5,12 +5,11 @@ body{
     margin: 0;
     padding: 0;
     background-color: teal;
-}
-.container{
-    display: grid;
-    width: 100vw;
-    height: 100vh;    
+    display: flex;
+    justify-content: center;
+    height: 100vh;
     font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
 }
 
 .items{
@@ -21,10 +20,12 @@ body{
                         "r"
                         "rn"    ;
     background-color: #14581a;
-    justify-self: center;
-    align-self: center;
-    min-width: 350px;
-    width: 33%;
+    margin-top: 100px;
+    min-width: 315px;
+    max-width: 500px;
+    min-height: 450px;
+    max-height: 500px;
+    width: 33vw;
     height: 60%;
     text-align: center;
     border: 1px solid yellowgreen;
@@ -33,7 +34,6 @@ body{
     
 }
 #reload{
-    margin-top: 20px;
     position: absolute;
     color: yellowgreen;
     font-size:clamp(15px,20px,20px);
@@ -78,7 +78,7 @@ input {
     font-size: clamp(15px,20px,20px);
     padding-bottom: 3px;
     color: white;
-    width: 50%;
+    width: 200px;
     height: 50px;
     justify-self: center;
     border: 2px outset greenyellow;
@@ -86,19 +86,20 @@ input {
     background-color: rgb(20, 88, 26);
     cursor: pointer;
     text-align: center;
+    line-height: 40px;
 }
 .botao:active{
     border: 2px inset greenyellow;
     background-color: rgb(31, 121, 39);
 }
 #nresultado{
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
     align-content: space-around;
     grid-area: rn;
     visibility: hidden;
 }
 .resultado{
-    font-size: clamp(25px,30px,30px);
+    font-size: clamp(25px,2vw,30px);
     align-self: flex-end;
     color: white;
     margin-bottom: 10px;
