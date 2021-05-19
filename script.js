@@ -28,8 +28,7 @@ function apostar() {
         return value
     })
     comparar()
-    botao.setAttribute("disabled", "disabled")
-    botao.style.cursor = 'default'
+    botao.setAttribute("hidden", "hidden")
     resultado.innerHTML = `Você acertou ${acertos} números`
     divresultado.style.visibility = 'visible'
 }
