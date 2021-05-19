@@ -4,16 +4,15 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: teal;
+    background-color: #061b08;
     display: flex;
     justify-content: center;
     height: 100vh;
     font-family: 'Barlow', sans-serif;
     overflow-x: hidden;
 }
-
 .items{
-    position: relative;
+    position: absolute;
     display: grid;
     grid-template-areas:"t"
                         "n"
@@ -28,34 +27,36 @@ body{
     width: 33vw;
     height: 60%;
     text-align: center;
-    border: 1px solid yellowgreen;
     border-radius: 25px;
-    box-shadow: 10px 10px 10px 1px rgb(15, 65, 19);
-    
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.281), 
+                inset 5px 5px 5px 3px #1f8027b7,
+                inset -5px -5px 5px 3px #0b2c0eb7;
 }
 #reload{
     position: absolute;
-    color: yellowgreen;
+    color: #9acd32;
     font-size:clamp(15px,20px,20px);
-    bottom: 1%;
-    right: 1%;
-    font-weight:bold;
+    bottom: 5%;
+    right: 5%;
     text-align:center;
     width:50px;
     height:50px;
-    background-color:#14581a;
-    border: 1px solid yellowgreen;
+    box-shadow: inset 2px 2px 3px 0px #25882fb7,
+                inset -2px -2px 3px 0px #0d3310b7;
+    background-color:#1a6e21;
+    border: none;
     border-radius: 25px;
     cursor: pointer;
 }
-#reload:hover{
-    background-color: yellowgreen;
-    color: #14581a;
+#reload:active{
+    box-shadow: inset -2px -2px 3px 0px #25882fb7,
+                inset 2px 2px 3px 0px #0d3310b7;
 }
 .title{
     font-weight: 800;
     font-style: italic;
     font-size: clamp(45px, 50px, 50px);
+    text-shadow: 1px 1px 0 #969595, 1px 2px 0 #969595, 1px 3px 0 #969595;    
     color: White;
     grid-area: t;
     align-self: center;
@@ -81,25 +82,32 @@ input {
     width: 200px;
     height: 50px;
     justify-self: center;
-    border: 2px outset greenyellow;
+    box-shadow: inset 2px 2px 3px 0px #25882f,
+                inset -2px -2px 3px 0px #0d3310;
+    border: none;
     border-radius: 25px;
-    background-color: rgb(20, 88, 26);
+    background-color: #1a6e21;
     cursor: pointer;
     text-align: center;
     line-height: 40px;
+    margin-top: -50px;
 }
 .botao:active{
-    border: 2px inset greenyellow;
-    background-color: rgb(31, 121, 39);
+    box-shadow: inset -2px -2px 3px 0px #25882f,
+                inset 2px 2px 3px 0px #0d3310;
 }
 #nresultado{
-    margin: 0 auto 25px auto;
+    position: absolute;
+    bottom: 90%;
+    left: 10%;
+    right: 10%;
+    margin: 0 auto;
     align-content: space-around;
     grid-area: rn;
     visibility: hidden;
 }
 .resultado{
-    font-size: clamp(25px,2vw,30px);
+    font-size: clamp(20px,2vw,30px);
     align-self: flex-end;
     color: white;
     margin-bottom: 10px;
