@@ -17,7 +17,10 @@ function apostar() {
     for (i=0; i<6; i++){
         nsorte[i] = nsorte[i].value
         while (sorteados.length < 6){
-                let numRandom = parseInt(Math.random()*61)
+            let numRandom = parseInt(Math.random()*61)
+            if (numRandom == 0 ){
+                numRandom ++
+            }
             if(sorteados.indexOf(numRandom) == -1){
                 sorteados.push(numRandom)
             }
